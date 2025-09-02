@@ -1,0 +1,144 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Preload */
+
+/*#preload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f5f0e6;
+}
+#preload img {
+  width: 200px;
+}
+.hidden {
+  display: none;
+}*/
+
+/* Menu */
+header {
+  background: #98D6FF;
+  padding: 1rem;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #222  ;
+}
+
+/* Hero Section */
+#main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  position: relative;
+}
+.main-text {
+  max-width: 50%;
+}
+.main-text h1 {
+  font-size: 2.5rem;
+  color: #519F68;
+}
+.main-text h2 {
+  font-size: 1.8rem;
+  color: #204965;
+}
+.main-img {
+  width: 300px;
+  position: absolute;
+  right: 5rem;
+  bottom: 56cm; /* interpretação direta */
+}
+
+/* Sobre */
+#sobre {
+  padding: 4rem;
+}
+.sobre-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-sobre-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  border: 3px solid green;
+}
+.img-sobre-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+}
+.texto-sobre {
+  max-width: 600px;
+  margin: 3rem auto;
+}
+
+/* Projetos */
+#projetos {
+  padding: 4rem;
+  background: #f0e8d9;
+}
+.grid-projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 2rem;
+}
+.projeto {
+  background: white;
+  padding: 2rem;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+}
+.projeto .gato {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.projeto .gato img {
+  width: 60px;
+}
+
+/* Footer */
+#contatos {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.redes img {
+  width: 40px;
+  cursor: pointer;
+  transition: transform .3s;
+}
+.redes img:hover {
+  transform: scale(1.1);
+}
