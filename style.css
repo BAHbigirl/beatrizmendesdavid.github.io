@@ -68,25 +68,34 @@ nav a {
 /* Sobre */
 #sobre {
   padding: 4rem;
+  color:#519F68 ;
 }
 .sobre-container {
   position: relative;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
 .img-sobre-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 150px;
+  flex-direction: row-reverse;
+  top: 70;
+  height: 359px;
+  width: 301px;
   border: 3px solid green;
 }
+#eu{
+  position: center;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid black;
+}
 .img-sobre-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 150px;
+  position: relative;
+  flex-direction: row-reverse;
+  bottom: 70;
+  border-left: 406px;
+  height: 431px;
+  width: 389px;
+  transform: scaleX(-1);
 }
 .texto-sobre {
   max-width: 600px;
@@ -96,7 +105,7 @@ nav a {
 /* Projetos */
 #projetos {
   padding: 4rem;
-  background: #f0e8d9;
+  background: #A768F8;
 }
 .grid-projetos {
   display: grid;
@@ -123,8 +132,8 @@ nav a {
 
 /* Footer */
 #contatos {
-  background: #222;
-  color: white;
+  background: #A768F8;
+  color: black;
   text-align: center;
   padding: 2rem;
 }
