@@ -66,31 +66,64 @@ nav a {
 }
 
 /* Sobre */
-#sobre {
+#imagem {
   padding: 4rem;
   color:#519F68 ;
 }
-.sobre-container {
-  position: relative;
-  flex-direction: column;
-  align-items: center;
+#container {
   display: grid;
-  grid-template-rows: 200px, 200px, 200px;
-  grid-template-columns: 3fr 2fr;
+  gap: 20px;
+  grid-template-columns: 3fr;
+  grid-template-rows: 2fr;
   grid-template-areas: 
-  "imagem-topo texto-sobre  texto-habilidade"
-  "imagem-baixo texto-conquista";
+  'img div div'
+  'img div div';
 }
 
-.img-sobre-top {
+div{
+  grid-area: div;
+}
+
+div .img{
+  grid-area: img
+}
+#sobre{
+  border-radius: 1%;
+  border-color: #222;
+  
+
+  
+}
+
+#habilidades{
+ 
+  background-color: #222;
+  
+}
+
+
+#conquistas{
+  
+  background-color: #204965;
+ 
+}
+
+#skill{
+
+  background-color: rebeccapurple;
+}
+
+
+#imagem-topo {
+  grid-area: aside;
   flex-direction: row-reverse;
   top: 70;
   height: 359px;
   width: 301px;
-  border: 3px solid green;
+  
 }
-.img-sobre-bottom {
-  position: relative;
+#imagem-baixo {
+  grid-area: aside;
   flex-direction: row-reverse;
   bottom: 70;
   border-left: 406px;
@@ -98,10 +131,7 @@ nav a {
   width: 389px;
   transform: scaleX(-1);
 }
-.texto-sobre {
-  max-width: 600px;
-  margin: 3rem auto;
-}
+
 
 /* Projetos */
 #projetos {
@@ -121,15 +151,7 @@ nav a {
   text-align: center;
   position: relative;
 }
-.projeto .gato {
-  position: absolute;
-  top: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.projeto .gato img {
-  width: 60px;
-}
+
 
 /* Footer */
 #contatos {
