@@ -87,50 +87,43 @@ div{
 div .img{
   grid-area: img
 }
-#sobre{
+.sobre{
   border-radius: 1%;
   border-color: #222;
-  
-
+  justify-content: left;
   
 }
 
-#habilidades{
- 
+.habilidade{
+  justify-content: left;
   background-color: #222;
   
 }
 
 
-#conquistas{
+.conquistas{
+  position: fixed;   /* fixa na tela */
+  bottom: 10px;      /* distância da borda inferior */
+  right: 10px;       /* distância da borda direita */
+}
+
+.skills{
+  position: fixed;
+  bottom: 10px;      /* distância da borda inferior */
+  left: 10px;        /* distância da borda esquerda */
   
-  background-color: #204965;
- 
-}
-
-#skill{
-
-  background-color: rebeccapurple;
 }
 
 
-#imagem-topo {
-  grid-area: aside;
+.item {
+  padding: 200px, 16px ;
   flex-direction: row-reverse;
   top: 70;
   height: 359px;
   width: 301px;
   
 }
-#imagem-baixo {
-  grid-area: aside;
-  flex-direction: row-reverse;
-  bottom: 70;
-  border-left: 406px;
-  height: 431px;
-  width: 389px;
-  transform: scaleX(-1);
-}
+
 
 
 /* Projetos */
@@ -173,4 +166,11 @@ div .img{
 }
 .redes img:hover {
   transform: scale(1.1);
+}
+.grid_novo{
+display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  grid-template-rows: repeat(2, 1fr);  /* 2 linhas */
+  gap: 20px;
+  padding: 40px;
 }
